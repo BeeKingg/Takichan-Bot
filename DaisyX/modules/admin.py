@@ -220,13 +220,13 @@ def set_title(update: Update, context: CallbackContext):
 
     if not user_member.status == "administrator":
         message.reply_text(
-            "Can't set title for non-admins!\nPromote them first to set custom title!"
+            "Gabisa Set Title Karna Belum Admin!\nPromote Dia Terlebih Dahulu!"
         )
         return
 
     if user_id == bot.id:
         message.reply_text(
-            "I can't set my own title myself! Get the one who made me admin to do it for me."
+            "Saya tidak bisa mengatur title saya sendiri! Hanya bisa dilakukan oleh orang yang mengangkat saya!."
         )
         return
 
