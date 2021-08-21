@@ -63,11 +63,10 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [𝓓𝓪𝓲𝓼𝔂 𝓧](https://telegra.ph/file/473cc17913393959e0667.jpg)
+Halo !!, Saya [Rio Robot](https://telegra.ph/file/5f7884be072cf3c07cd05.png)
 
-I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
-
-✪ Make sure you read *INFO* Section Below ✪ 
+**Saya adalah robot pintar yang akan membantu mu mengatur grup dengan aman dan cepat**
+✪ Teka Tombol Dibawah Ini ✪ 
 """
 
 buttons = [
@@ -79,20 +78,20 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💫 Add Daisy to your group 💫", url="t.me/daisyXBot?startgroup=true"
+            text="💫 Add to your group 💫", url="t.me/Rio1robot?startgroup=true"
         ),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/473cc17913393959e0667.jpg)
-✪ /start: Starts me! You've probably already used this.
-✪ /help: Click this, I'll let you know about myself!
-✪ /donate: You can support my creater using this command.
+*Main Commands :* [🤖](https://telegra.ph/file/5f7884be072cf3c07cd05.png)
+✪ /start: Mulai Saya! Untuk Memulai.
+✪ /help: Klik help, Agar Menerima Bantuan Perintah!
+✪ /donate: Dengan Senang Hati Dalam Dinas Untuk Membuat Bot Tetap bekerja.
 ✪ /settings: 
-   ◔ in PM: will send you your settings for all supported modules.
-   ◔ in a Group: will redirect you to pm, with all that chat's settings.
+   ◔ in PM: Akan mengirimkan pengaturan Anda untuk semua modul yang didukung.
+   ◔ in a Group: akan mengarahkan Anda ke PM, dengan semua pengaturan obrolan itu.
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
@@ -101,7 +100,7 @@ HELP_STRINGS = f"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
-Support them  [Inuka](t.me/InukaASiTH),[Jason](t.me/imjanindu),"""
+Support them  [Rio Cute](t.me/riio00),[Channel](t.me/riobotsupport),"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -361,9 +360,9 @@ def DaisyX_about_callback(update, context):
     if query.data == "aboutmanu_":
         query.message.edit_text(
             text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by Infinity_Bots.* "
-            f"\n\n 🔥 Join [Infinity_Bots](https://t.me/Infinity_Bots) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            f"\n\n 🔥 Join [Group Suport](https://t.me/siiniaja) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/473cc17913393959e0667.jpg)"
+            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/5f7884be072cf3c07cd05.png)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -419,8 +418,8 @@ def DaisyX_about_callback(update, context):
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [Daisy](https://github.com/inukaasith/daisy) + [Naruto](https://github.com/imjanindu/narutorobot)."
-            f"\n\n{dispatcher.bot.first_name}'s source code was written by InukaASiTH and Imjanindu"
+            f"\n\nBased on [Rio](https://github.com/RioProjectX) + [Group](https://t.me/siiniaja)."
+            f"\n\n{dispatcher.bot.first_name}'s source code was written by Rio"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -475,18 +474,18 @@ def DaisyX_about_callback(update, context):
     elif query.data == "aboutmanu_tac":
         query.message.edit_text(
             text=f"<b> ｢ Terms and Conditions 」</b>\n"
-            f"\n<i>To Use This Bot, You Need To Read Terms and Conditions Carefully.</i>\n"
-            f"\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
-            f"\n✪ Always try to keep credits, so \n  This hardwork is done by Infinity_Bots team spending many sleepless nights.. So, Respect it."
-            f"\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for <b>Paul Larson for Marie</b>."
-            f"\n✪ If you need to ask anything about \n  this bot, Go @{SUPPORT_CHAT}."
-            f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
-            f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
-            f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of DaisyXBot we are not resposible for anything."
-            f"\n\nFor any kind of help, related to this bot, Join @{SUPPORT_CHAT}."
-            f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
-            parse_mode=ParseMode.HTML,
-            reply_markup=InlineKeyboardMarkup(
+            f"\n <i> untuk menggunakan bot ini, Anda perlu membaca syarat dan ketentuan dengan hati-hati. </ i> \ n"
+            f"\n✪ Kami selalu menghormati privasi Anda \ n kami tidak pernah masuk ke API bot dan memata-matai Anda \ n kami menggunakan basis data ifripted \ n bot akan secara otomatis berhenti jika seseorang masuk dengan API."
+            f"\n✪ selalu berusaha untuk menjaga kredit, jadi \ n hardwork ini dilakukan oleh Tim Infinity_Bots Menghabiskan banyak malam tanpa tidur. Jadi, hormatinya."
+            f"\n✪ Beberapa modul dalam BOT ini dimiliki oleh penulis yang berbeda, jadi, \ n semua kredit diberikan kepada mereka \ n juga untuk <b> Paul Larson untuk Marie </ b>."
+            f"\n✪ Jika Anda perlu bertanya apa-apa tentang \ n bot ini, go @ {support_chat}."
+            f"\n✪ Jika Anda meminta omong kosong dalam mendukung \ n chat, Anda akan diperingatkan / dilarang."
+            f"\n✪ semua API yang kami gunakan dimiliki oleh penulis aslinya \ n beberapa API kami menggunakan versi gratis \ n tolong jangan terlalu sering menggunakan ai."
+            f"\n✪ Kami tidak memberikan dukungan untuk garpu, \ n jadi syarat dan ketentuan ini tidak diterapkan pada garpu \ n jika Anda menggunakan garpu daisyxbot kami tidak bertanggung jawab atas apa pun."
+            f"\n \ n untuk segala jenis bantuan, terkait dengan bot ini, bergabung @ {support_chat}."
+            f"\n \ N <I> Syarat & Ketentuan akan diubah kapan saja </ i> \ n",
+            parse_mode = parsemode.html,
+            Balas_markup = inlineKeyboardMarkup)
                 [
                     [
                         InlineKeyboardButton(
