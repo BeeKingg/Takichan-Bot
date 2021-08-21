@@ -1,14 +1,14 @@
 {
-      "name": "Rio-Robot",
-      "description": "Bot Management Telegram yang pintar mengatur group.",
+      "name": "Daisy X",
+      "description": "An Anime themed Telegram group management bot.",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Rio-Robot"
+         "DaisyX"
       ],   
-   "repository": "https://github.com/RioProjectX/Rio-Robot",
+   "repository": "https://github.com/Inukaasith/daisy-x",
    "addons": [
       {
          "options": {
@@ -27,17 +27,17 @@
   ],      
    "env": {
       "TOKEN": {
-         "description": "Bot token mu. Ambil dari @BotFather ",
+         "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
          "value": ""
       },
       "API_ID": {
-         "description": "ambil API_ID dari my.telegram.org, used for telethon based modules.",
+         "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
          "value": ""
       },
       "API_HASH": {
-         "description": "ambil API_HASH dari my.telegram.org, used for telethon based modules.",
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
          "value": ""
       },    
@@ -53,12 +53,12 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "riio00"
+         "value": "InukaAsith"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "siiniaja"
+         "value": "MyAwesomeSupportGroupGoesHere"
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
@@ -83,7 +83,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "1756894110'
+         "value": "1141839926 1186105905 1204360944 1082702383 1321570688 1116300562 694380168 1347096051"
       },
       "sw_api": {
          "description": "Spamwatch API Token, Get one from @SpamWatchBot.",
@@ -97,22 +97,22 @@
       "DRAGONS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "1756894110"
+         "value": "1141839926 1186105905 1204360944 1082702383 1321570688 1116300562 694380168 1347096051"
       },
       "DEMONS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "1756894110"
+         "value": "1141839926 1186105905 1204360944 1082702383 1321570688 1116300562 694380168 1347096051"
       },
       "TIGERS": {
          "description": "A space separated list of user IDs who you wanna assign as tiger users.",
          "required": false,
-         "value": "1756894110"
+         "value": "1141839926 1186105905 1204360944 1082702383 1321570688 1116300562 694380168 1347096051"
       },
       "WOLVES": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": "1756894110"
+         "value": "1141839926 1186105905 1204360944 1082702383 1321570688 1116300562 694380168 1347096051"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
@@ -150,7 +150,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "Riio00"
+         "value": "https://www.paypal.me/PaulSonOfLars"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
@@ -179,6 +179,6 @@
       "manager",
       "daisy"
    ],
-   "name": "Rio-Robot",
-   "repository": "https://github.com/RioProjectX/Rio-Robot"
+   "name": "Daisy X",
+   "repository": "https://github.com/Inukaasith/daisy-x"
 }
