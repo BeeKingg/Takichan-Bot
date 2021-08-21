@@ -1,14 +1,14 @@
 {
-      "name": "Daisy X",
-      "description": "An Anime themed Telegram group management bot.",
+      "name": "Rio-Robot",
+      "description": "Telegram group management bot.",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "DaisyX"
+         "Rio-Robot"
       ],   
-   "repository": "https://github.com/Inukaasith/daisy-x",
+   "repository": "https://github.com/RioProjectX/Rio-Robot",
    "addons": [
       {
          "options": {
@@ -53,12 +53,12 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "InukaAsith"
+         "value": "Riio00"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "MyAwesomeSupportGroupGoesHere"
+         "value": "siniaja"
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
