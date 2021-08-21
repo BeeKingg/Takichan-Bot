@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/DaisyX
-RUN git clone -b shiken https://github.com/Infinity-Bots/LizaDaisyX /root/DaisyX
-WORKDIR /root/DaisyX
+# Copy Python Requirements to /root/Rio-Robot
+RUN git clone -b shiken https://github.com/RioProjectX/Rio-Robot /root/Rio-Robot
+WORKDIR /root/Rio-Robot
 
-#Copy config file to /root/DaisyX/DaisyX
-COPY ./DaisyX/sample_config.py ./DaisyX/config.py* /root/DaisyX/DaisyX/
+#Copy config file to /root/Rio-Robot/Rio-Robot
+COPY ./Rio-Robot/sample_config.py ./Rio-Robot/config.py* /root/Rio-Robot/Rio-Robot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","DaisyX"]
+CMD ["python3","-m","Rio-Robot"]
