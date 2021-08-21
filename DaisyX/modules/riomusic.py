@@ -37,9 +37,9 @@ async def download_video(v_url):
     me = await lazy.client.get_me()
 
     if not sender.id == me.id:
-        rkp = await lazy.reply("`processing...`")
+        rkp = await lazy.reply("`Proses...`")
     else:
-        rkp = await lazy.edit("`processing...`")
+        rkp = await lazy.edit("`Proses...`")
     url = v_url.pattern_match.group(1)
     if not url:
         return await rkp.edit("`Error \nusage song <song name>`")
@@ -50,9 +50,9 @@ async def download_video(v_url):
     try:
         url = q[0]["link"]
     except:
-        return await rkp.edit("`failed to find`")
+        return await rkp.edit("`Gagal Menemukan`")
     type = "audio"
-    await rkp.edit("`Preparing to download...`")
+    await rkp.edit("`Sedang Mendownload...`")
     if type == "audio":
         opts = {
             "format": "bestaudio",
@@ -91,10 +91,10 @@ async def download_video(v_url):
         )
         return
     except MaxDownloadsReached:
-        await rkp.edit("`Max-downloads limit has been reached.`")
+        await rkp.edit("`Maksimal Download sudah ditentukan.`")
         return
     except PostProcessingError:
-        await rkp.edit("`There was an error during post processing.`")
+        await rkp.edit("`Eror Saat Memproses.`")
         return
     except UnavailableVideoError:
         await rkp.edit("`Media is not available in the requested format.`")
@@ -111,7 +111,7 @@ async def download_video(v_url):
     c_time = time.time()
     if song:
         await rkp.edit(
-            f"`Preparing to upload song:`\
+            f"`Sedang Mengupload Lagu🎵:`\
         \n**{rip_data['title']}**\
         \nby *{rip_data['uploader']}*"
         )
@@ -127,13 +127,13 @@ async def download_video(v_url):
                 )
             ],
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                progress(d, t, v_url, c_time, "Uploading..", f"{rip_data['title']}.mp3")
+                progress(d, t, v_url, c_time, "Uploading🎶..", f"{rip_data['title']}.mp3")
             ),
         )
         os.remove(f"{rip_data['id']}.mp3")
     elif video:
         await rkp.edit(
-            f"`Preparing to upload song :`\
+            f"`Sedang Mengupload Lagu🎵 :`\
         \n**{rip_data['title']}**\
         \nby *{rip_data['uploader']}*"
         )
@@ -155,9 +155,9 @@ async def download_video(v_url):
     sender = await lazy.get_sender()
     me = await lazy.client.get_me()
     if not sender.id == me.id:
-        rkp = await lazy.reply("`processing...`")
+        rkp = await lazy.reply("`Memproses...`")
     else:
-        rkp = await lazy.edit("`processing...`")
+        rkp = await lazy.edit("`Memproses...`")
     url = v_url.pattern_match.group(1)
     if not url:
         return await rkp.edit("`Error \nusage song <song name>`")
@@ -168,9 +168,9 @@ async def download_video(v_url):
     try:
         url = q[0]["link"]
     except:
-        return await rkp.edit("`failed to find`")
+        return await rkp.edit("`gagal mencari `")
     type = "audio"
-    await rkp.edit("`Preparing to download...`")
+    await rkp.edit("`bersiap mendownload...`")
     if type == "audio":
         opts = {
             "format": "best",
@@ -189,7 +189,7 @@ async def download_video(v_url):
         song = False
         video = True
     try:
-        await rkp.edit("`Fetching data, please wait..`")
+        await rkp.edit("`Fetching data, mohon tunggu..`")
         with YoutubeDL(opts) as rip:
             rip_data = rip.extract_info(url)
     except DownloadError as DE:
@@ -240,7 +240,7 @@ async def download_video(v_url):
                 )
             ],
             progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                progress(d, t, v_url, c_time, "Uploading..", f"{rip_data['title']}.mp3")
+                progress(d, t, v_url, c_time, "mengupload..", f"{rip_data['title']}.mp3")
             ),
         )
         os.remove(f"{rip_data['id']}.mp3")
