@@ -46,12 +46,12 @@ async def song(client, message):
     user_id = message.from_user["id"]
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply("Enter a song name. Check /help")
+        await message.reply("Masukan Nama Lagu. Check /help")
         return ""
-    status = await message.reply("Processing...")
+    status = await message.reply("Memproses...")
     video_link = yt_search(args)
     if not video_link:
-        await status.edit("Song not found.")
+        await status.edit("Lagu Tidak Ditemukan.")
         return ""
     yt = YouTube(video_link)
     audio = yt.streams.filter(only_audio=True).first()
@@ -76,8 +76,7 @@ async def song(client, message):
 
 
 __help__ = """
- *You can either enter just the song name or both the artist and song
-  name. *
+ *Silakan Masukan Judul Lagu Atau Nama Artis Lay. *
 
  ✪ /song <songname artist(optional)>*:* uploads the song in it's best quality available
  ✪ /video <songname artist(optional)>*:* uploads the video song in it's best quality available
