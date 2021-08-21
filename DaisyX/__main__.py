@@ -243,12 +243,7 @@ def error_handler(update, context):
 
 
 
-    if len(message) >= 4096:
-        message = message[:4096]
-    # Finally, send the message
-    context.bot.send_message(chat_id=OWNER_ID, text=message, parse_mode=ParseMode.HTML)
-
-
+    
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
     error = context.error
