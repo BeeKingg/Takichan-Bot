@@ -241,14 +241,7 @@ def error_handler(update, context):
     )
     tb = "".join(tb_list)
 
-    # Build the message with some markup and additional information about what happened.
-    message = (
-        "An exception was raised while handling an update\n"
-        "<pre>update = {}</pre>\n\n"
-        "<pre>{}</pre>"
-    ).format(
-        
-    )
+
 
     if len(message) >= 4096:
         message = message[:4096]
