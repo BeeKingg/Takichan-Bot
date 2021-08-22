@@ -76,12 +76,58 @@ async def song(client, message):
 
 
 __help__ = """
- *Silakan Masukan Judul Lagu Atau Nama Artis Lay. *
+ *Silakan Masukan Judul Lagu Atau Nama Artis Lagu. *
 
- ✪ /song <songname artist(optional)>*:* uploads the song in it's best quality available
- ✪ /video <songname artist(optional)>*:* uploads the video song in it's best quality available
- ✪ /lyrics <song>*:* returns the lyrics of that song.
+Holla Welcome to help menu ✨
 
+📌BAGAIMANA CARA MENGGUNAKAN RIO MANAGER MUSIC ?
+
+1. pertama tambahkan saya ke grup mu.
+2. promote me as admin and give all permission.
+3. kemudian, tambahkan @Riomusicasisten ke grupmu atau bisa ketik /userbotjoin.
+3. nyalakan dulu VCG sebelum memutar musik.
+
+📌perintan untuk semua anggota grup:
+
+/play (judul lagu) - memutar musik melalui youtube
+/stream (balas ke audio) - memutar musik melalui balas audio
+/playlist - kenunjukan daftar putar
+/current - menunjukan yang sedang diputar saat ini
+/song (judul lagu) - mengunduh musik melalui youtube
+/search (nama video) - mencari video dari youtube secara rinci
+/vsong (nama video) - mengunduh video dari youtube secara rinci
+/vk (judul lagu) - unduh melalui mode inline
+
+📌 perintah untuk admin:
+
+/player - membuka panel oengaturan musik
+/pause - jeda pemutaran musik
+/resume - melanjutkan pemutaran musik
+/skip - melompati lagu yang sedang diputar
+/end - menghentikan musik
+/userbotjoin - mengundang assisten ke grup anda
+/reload - untuk memperbarui daftar admin
+/cache - untuk membersihkan cache admin
+/musicplayer (on / off) - mematikan/menghidupkan pemutar musik di grupmu
+
+🎧 channel streaming commands:
+
+/cplay - mendengarkan musik lewat channel
+/cplayer - melihat daftar putar
+/cpause - jeda pemutar musik
+/cresume - melajutkan musik yang di jeda
+/cskip - melompati lagu yang sedang diputar
+/cend - menghentikan lagu
+/admincache - memperbarui cache admin
+
+🧙‍♂️ command for sudo users:
+
+/userbotleaveall - mengeluarkan asisten dari semua grup
+/gcast - mengirim pesan siaran
+
+📌 commands for fun:
+
+/lyric - (judul lagu) melihat lirik
 """
 
-__mod_name__ = "Music 🎧"
+__mod_name__ = "Music Player🎶"
