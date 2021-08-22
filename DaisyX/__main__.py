@@ -81,14 +81,14 @@ Saya Memiliki Banyak Fitur Praktis Seperti :
 
 buttons = [
     [
-        InlineKeyboardButton(text="🚀 INFO 🚀", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="📣 INFO 📣", callback_data="aboutmanu_"),
     ],
     [
-        InlineKeyboardButton(text="❓ Help & Commands ❓", callback_data="help_back"),
+        InlineKeyboardButton(text=" Help & Perintah", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="💫 Add to your group 💫", url="t.me/Rio1roBot?startgroup=true"
+            text="🔔 Tambahkan Saya ke Group mu 🔔", url="t.me/Rio1roBot?startgroup=true"
         ),
     ],
 ]
