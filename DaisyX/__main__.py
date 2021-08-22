@@ -63,11 +63,20 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [RioRobot](https://telegra.ph/file/f1f1c64f8581a3cab0725.png)
-
-I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
-
-✪ Make sure you read *INFO* Section Below ✪ 
+Halo Cakep!, Saya [RioRobot](https://telegra.ph/file/1646d6a694115d6b1b75b.jpg)
+Saya Bot Management Group, Yang Bisa Mengurus Group/Memutar Lagu Dengan Cepat di Voice Chat Group Dengan Cara Yang Mudah
+Saya Memiliki Banyak Fitur Praktis Seperti :
+┏━━━━━━━━━━━━━━
+┣• Memutar Musik.
+┣• Mendownload Lagu.
+┣• Menjaga Group Mu.
+┣• Mengatur Group Mu.
+┣• Mencari Lagu Yang ingin di Putar atau di Download.
+┣• Gunakan Perintah » /help « untuk Mengetahui Fitur Lengkap Saya
+┗━━━━━━━━━━━━━━
+❃ Project By [Rio Cute](https://t.me/riio00)
+❃ Terimakasih Telah Menggunakan Project Ini! [{OWNER_NAME}](https://t.me/{OWNER_NAME})
+━━━━━━━━━━━━━━━** 
 """
 
 buttons = [
