@@ -87,6 +87,12 @@ buttons = [
         InlineKeyboardButton(text=" Help & Perintah", callback_data="help_back"),
     ],
     [
+        InlineKeyboardButton(text=" Channel ", url="t.me/riobotsupport"),
+    ],
+    [
+        InlineKeyboardButton(text=" Grup Support", url="t.me/Siiniaja"),
+    ],
+    [
         InlineKeyboardButton(
             text="🔔 Tambahkan Saya ke Group mu 🔔", url="t.me/Rio1roBot?startgroup=true"
         ),
