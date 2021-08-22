@@ -84,7 +84,7 @@ Holla Welcome to help menu ✨
 
 1. pertama tambahkan saya ke grup mu.
 2. promote me as admin and give all permission.
-3. kemudian, tambahkan @Riomusicasisten ke grupmu atau bisa ketik /userbotjoin.
+3. kemudian, tambahkan @Riomusicasistant ke grupmu atau bisa ketik /userbotjoin.
 3. nyalakan dulu VCG sebelum memutar musik.
 
 📌perintan untuk semua anggota grup:
@@ -130,4 +130,4 @@ Holla Welcome to help menu ✨
 /lyric - (judul lagu) melihat lirik
 """
 
-__mod_name__ = "Music Player🎶"
+__mod_name__ = "Music Player"
