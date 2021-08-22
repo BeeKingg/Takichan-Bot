@@ -97,8 +97,8 @@ buttons = [
 HELP_STRINGS = f"""
 *Main Commands :* [🤖](https://telegra.ph/file/f1f1c64f8581a3cab0725.png)
 ✪ /start: Starts me! You've probably already used this.
-✪ /help: Click this, I'll let you know about myself!
-✪ /donate: You can support my creater using this command.
+✪ /help: Click Ini, Saya Akan memberikan List Perintah!
+✪ /donate: Anda Bisa Mensuport developer Dengan Donasi.
 ✪ /settings: 
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
@@ -108,8 +108,8 @@ HELP_STRINGS = f"""
 )
 
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-You can donate to the original writer's of the Base code,
+DONATE_STRING = """Hei, Senang Mendengarkan Ingin Donasi :3!
+Kau Bisa Donasi Ke original Devloper,
 Support them  [Rio](t.me/riio00),[Channel](t.me/riobotsupport),"""
 
 IMPORTED = {}
